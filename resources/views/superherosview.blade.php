@@ -30,7 +30,7 @@
             </tr>    
         </thead>
         <tbody>
-            @foreach($men as $hero)
+            @foreach($superheros as $hero)
             <tr>
                 <td>{{$hero->id}}</td>
                 <td>{{$hero->name}}</td>
