@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\superherosController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +17,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
+
+Route::get('/example', function () {
+    $page_title="example view";
+    return view('exampleview', compact('page_title'));
+})->name('example');
+
+//Route::get('/superheros', function () {
+    
+Route::get('/heros',[superherosController::class, 'index']);
