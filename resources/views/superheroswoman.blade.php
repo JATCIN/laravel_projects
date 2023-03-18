@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,7 +15,7 @@
         </style>
 </head>
 <body>
-    <h1>{{$page_title}}</h1>
+<h1>{{$page_title}}</h1>
     <br>
     
     <table>
@@ -30,7 +29,7 @@
             </tr>    
         </thead>
         <tbody>
-            @foreach($superheros as $hero)
+            @foreach($men as $hero)
             <tr>
                 <td>{{$hero->id}}</td>
                 <td>{{$hero->name}}</td>
@@ -41,8 +40,7 @@
             @endforeach
         </tbody>    
     </table>
-    <a href="{{route('herosmen')}}">HEROS MENS</a>
-    <a href="{{route('heroswoman')}}">HEROS WOMAN </a>
-
+    <a href="{{route('herosmen')}}">HEROSMEN</a>
+    <a href="{{route('heros')}}">SUPERHEROS </a> 
 </body>
 </html>

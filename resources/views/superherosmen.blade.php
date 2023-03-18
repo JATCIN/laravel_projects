@@ -16,6 +16,8 @@
         </style>
 </head>
 <body>
+</head>
+<body>
     <h1>{{$page_title}}</h1>
     <br>
     
@@ -30,7 +32,7 @@
             </tr>    
         </thead>
         <tbody>
-            @foreach($superheros as $hero)
+            @foreach($men as $hero)
             <tr>
                 <td>{{$hero->id}}</td>
                 <td>{{$hero->name}}</td>
@@ -43,6 +45,5 @@
     </table>
     <a href="{{route('herosmen')}}">HEROS MENS</a>
     <a href="{{route('heroswoman')}}">HEROS WOMAN </a>
-
 </body>
 </html>

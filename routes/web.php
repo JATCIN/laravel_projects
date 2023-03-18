@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\superherosController;
+use App\Http\Controllers\superherosmenController;
+use App\Http\Controllers\superheroswomanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +29,5 @@ Route::get('/example', function () {
 //Route::get('/superheros', function () {
     
 Route::get('/heros',[superherosController::class, 'index']);
+Route::get('/herosmen',[superherosmenController::class, 'mens']);
+Route::get('/heroswoman',[superheroswomanController::class,'woman']);

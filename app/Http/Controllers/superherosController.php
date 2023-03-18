@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 ////REMEMBER IMPORTING ALL YOUR MODELS
 use App\Models\superheros;
+use App\Models\superherosmen;
 
 class superherosController extends Controller
 {
